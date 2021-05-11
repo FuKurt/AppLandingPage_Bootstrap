@@ -18,15 +18,16 @@
     --black000: #fff;
     --blackAlpha100: rgba(0,0,0,0.05);
 }
-body{
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
-    background-color: var(--black000);
-}
+
 *{
     margin: 0;
     padding: 0;
     outline: none !important;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background-color: var(--black000);
 }
 img{
     max-width: 100%;
@@ -35,10 +36,45 @@ img{
 ul{
     list-style: none;
 }
+@keyframes spin_1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes bounceTop_1 {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+}
+@keyframes pulse_1 {
+    0%{
+        transform: scale(0.94);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    70%{
+        transform: scale(1);
+        box-shadow: 0 0 0 12px rgba(255, 255, 255, 0);
+    }
+    100%{
+        transform: scale(0.94);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+}
 
 /*---Navbar---*/
-.navbar {
-    background-color: var(--mainColor);
+.navbar{
+    transition: all .5s ease;
+}
+.navbar.navbar-shrink{
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--mainColor) !important;
+    padding: 5px 0 !important;
 }
 .navbar .navbar-brand{
     font-weight: 500;
@@ -62,4 +98,101 @@ ul{
 .navbar .nav-item .nav-link.active::before,
 .navbar .nav-item .nav-link:hover::before{
     transform: scale(1);
+}
+
+/*---Home Section---*/
+.home{
+    border-bottom-right-radius: 20%;
+    background-color: var(--main-to-dark-color);
+}
+.home .effect-wrap .effect-1 {
+    top: 13%;
+    left: 15%;
+    animation: spin_1 5s linear infinite;
+    color: var(--yellowish);
+}
+.home .effect-wrap .effect-2 {
+    top: 5%;
+    right: 5%;
+    animation: spin_1 5s linear infinite;
+    color: var(--redish);
+}
+.home .effect-wrap .effect-3 {
+    top: 82%;
+    left: -4%;
+    animation: bounceTop_1 2s ease-in-out infinite;
+    color: var(--greenish);
+}
+.home .home__text h1{
+    font-size: 51px;
+}
+.home .home__buttons a{
+    color: var(--mainColor);
+    font-weight: 500;
+    transition: all .5s ease;
+}
+.home .home__buttons .btn-play{
+    border-radius: 50%;
+    cursor: pointer;    
+    animation: pulse_1 2s ease infinite;
+}
+.home .home__buttons .btn-play:hover{
+    animation: none;
+}
+.home .home__buttons .fas:hover{
+    opacity: .6;
+}
+.home .home__buttons a:hover{
+    color: var(--black000);
+    background-color: var(--mainColor);
+}
+.home .home__img img{
+    max-width: 250px;
+    animation: bounceTop_1 2s  ease infinite;
+}
+.home .circle{
+    height: 400px;
+    width: 400px;
+    border-color: var(--mainColor);
+    opacity: .3;
+    z-index: 1;
+}
+.home .circle::before{
+    content: '';
+    position: absolute;  
+    top: 30px;
+    left: 30px;  
+    height: 60px;
+    width: 60px;
+    background-color: var(--black000);
+    border-radius: 50%;
+    border-color: var(--mainColor);
+    opacity: .5;
+    transform-origin: 170px 170px;
+    animation: spin_1 10s linear infinite;
+}
+
+/*-----Video Popup----*/
+.video-popup{
+    z-index: 1999;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease;
+}
+.video-popup.open{
+    opacity: 1;
+    visibility: visible;
+}
+.video-popup-inner{
+    max-width: 900px;
+}
+.video-popup .video-popup-close{
+    top: -30px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+.video-popup .iframe-box{
+    padding-top: 56.25%;
 }
