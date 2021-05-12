@@ -269,3 +269,27 @@ ul{
 .features .feature__item:hover .circle-2{
     right: 5%;
 }
+
+/*---Features---*/
+.funfacts .row img{
+    max-width: 230px;
+    animation: bounceTop_1 2s  ease infinite;
+} 
+.funfacts .col-6 h2 span{
+    color: var(--mainColor);
+}
+.funfacts .boxes .box{
+    border-radius: 10px;
+}
+.funfacts .boxes .box-1{
+    background-color: var(--redish);
+}
+.funfacts .boxes .box-2{
+    background-color: var(--yellowish);
+}
+.funfacts .boxes .box-3{
+    background-color: var(--greenish);
+}
+.funfacts .boxes .box-4{
+    background-color: var(--mainColor);
+}
