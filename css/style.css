@@ -270,7 +270,7 @@ ul{
     right: 5%;
 }
 
-/*---Features---*/
+/*---Fun Facts---*/
 .funfacts .row img{
     max-width: 230px;
     animation: bounceTop_1 2s  ease infinite;
@@ -293,3 +293,14 @@ ul{
 .funfacts .boxes .box-4{
     background-color: var(--mainColor);
 }
+
+/*---Screenshots---*/
+
+.screenshots .screenshots__title span{
+    color: var(--mainColor);
+}
+.screenshots .carousel__items img{
+    max-width: 250px;
+}
+
+/*---Download---*/

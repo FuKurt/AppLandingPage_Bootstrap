@@ -38,4 +38,23 @@ $(document).ready(()=> {
             }
         }
     });
+
+    /* ------Screenshots Carousel----- */
+    $('.carousel__items').owlCarousel({
+        loop:true,
+        margin:0,
+        autoplay:false,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            768:{
+                items:2,
+            },
+            1200:{
+                items:4,
+            }
+        }
+    });
 });
