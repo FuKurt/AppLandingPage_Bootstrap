@@ -43,7 +43,7 @@ $(document).ready(()=> {
     $('.carousel__items').owlCarousel({
         loop:true,
         margin:0,
-        autoplay:false,
+        autoplay:true,
         responsiveClass:true,
         responsive:{
             0:{
@@ -54,6 +54,25 @@ $(document).ready(()=> {
             },
             1200:{
                 items:4,
+            }
+        }
+    });
+
+    /* ------Testimonials----- */
+    $('.testi__carousel').owlCarousel({
+        loop:true,
+        margin:0,
+        autoplay:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            768:{
+                items:2,
+            },
+            1200:{
+                items:3,
             }
         }
     });
