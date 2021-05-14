@@ -368,3 +368,37 @@ ul {
 .testimonials .stars i{
   color: #f5ae10;
 }
+
+/*---Pricing---*/
+.pricing .pricing__title span{
+  color: var(--mainColor);
+}
+.pricing .pricing__item{
+  box-shadow: var(--shadowBlack100);
+  border-radius: 10px;
+}
+.price {
+  font-size: 5rem;
+  color: var(--mainColor);
+}
+.price .currency {
+    font-size: 17px;
+    position: relative;
+    top: -45px;
+    letter-spacing: 0px;
+  }
+.price .period {
+    font-size: 1rem;
+  }
+.pricing .pricing__item .btn{
+  color: var(--black000);
+  background-color: var(--mainColor);
+  box-shadow: var(--shadowBlack100);
+  transition: all .3s ease;
+}.pricing .pricing__item .btn:hover{
+  color: var(--mainColor);
+  background-color: var(--black000);
+}
+.pricing .pricing__item .item__content i{
+  color: var(--mainColor);
+}
