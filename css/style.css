@@ -337,8 +337,8 @@ ul {
 .howitworks .howitworks__title span {
   color: var(--mainColor);
 }
-.howitworks__item.line-right::before{
-  content: '';
+.howitworks__item.line-right::before {
+  content: "";
   position: absolute;
   height: 2px;
   width: 100%;
@@ -347,33 +347,32 @@ ul {
   background-color: var(--mainColor);
   z-index: -1;
 }
-.howitworks .step{
+.howitworks .step {
   height: 55px;
   width: 55px;
   background-color: var(--mainColor);
 }
 /*---Testimonials---*/
-.testimonials .testi__title span{
+.testimonials .testi__title span {
   color: var(--mainColor);
 }
-.testimonials .testi__image{
+.testimonials .testi__image {
   width: 100px;
   height: 100px;
   border: 4px solid var(--mainColor);
 }
-.testimonials .testi__image i{
+.testimonials .testi__image i {
   font-size: 9px;
   background-color: var(--mainColor);
 }
-.testimonials .stars i{
+.testimonials .stars i {
   color: #f5ae10;
 }
-
 /*---Pricing---*/
-.pricing .pricing__title span{
+.pricing .pricing__title span {
   color: var(--mainColor);
 }
-.pricing .pricing__item{
+.pricing .pricing__item {
   box-shadow: var(--shadowBlack100);
   border-radius: 10px;
 }
@@ -382,23 +381,31 @@ ul {
   color: var(--mainColor);
 }
 .price .currency {
-    font-size: 17px;
-    position: relative;
-    top: -45px;
-    letter-spacing: 0px;
-  }
+  font-size: 17px;
+  position: relative;
+  top: -45px;
+  letter-spacing: 0px;
+}
 .price .period {
-    font-size: 1rem;
-  }
-.pricing .pricing__item .btn{
+  font-size: 1rem;
+}
+.pricing .pricing__item .btn {
   color: var(--black000);
   background-color: var(--mainColor);
   box-shadow: var(--shadowBlack100);
-  transition: all .3s ease;
-}.pricing .pricing__item .btn:hover{
+  transition: all 0.3s ease;
+}
+.pricing .pricing__item .btn:hover {
   color: var(--mainColor);
   background-color: var(--black000);
 }
-.pricing .pricing__item .item__content i{
+.pricing .pricing__item .item__content i {
   color: var(--mainColor);
+}
+/*---Team Member---*/
+.members .members__title span {
+  color: var(--mainColor);
+}
+.members .member__item{
+  box-shadow: var(--shadowBlack100);
 }
