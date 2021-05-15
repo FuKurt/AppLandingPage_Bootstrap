@@ -437,8 +437,6 @@ ul {
 }
 .questions .accordion__header:not(.collapsed)::before{
   content: '\f068';
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
   color: var(--black000);
 }
 .questions .accordion__header:not(.collapsed){
@@ -447,4 +445,36 @@ ul {
 }
 .questions .accordion__header:not(.collapsed) h3{
   color: var(--black000);
+}
+/*---Get In Touch---*/
+.getintouch .touch__title span {
+  color: var(--mainColor);
+}
+.getintouch .form-control{
+  border: 0px;
+  box-shadow: var(--shadowBlack100);
+  border-radius: 20px;
+  padding: 15px 15px;
+  font-size: 13px;
+  color: var(--black400);
+}
+.getintouch .form-control:focus{
+  border: 2px solid var(--mainColor);
+  box-shadow: var(--shadowBlack300);
+}
+.getintouch .text__line .text__icon i{
+  color: var(--mainColor);
+  border: 1px solid var(--mainColor);
+  border-radius: 50%;
+  padding: 11px;
+}
+.getintouch .form__button .btn {
+  color: var(--black000);
+  background-color: var(--mainColor);
+  box-shadow: var(--shadowBlack100);
+  transition: all 0.3s ease;
+}
+.getintouch .form__button .btn:hover {
+  color: var(--mainColor);
+  background-color: var(--black000);
 }
