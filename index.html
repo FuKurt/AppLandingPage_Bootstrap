@@ -42,29 +42,29 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#home">Home</a>
+              <a class="nav-link active" href="#home" data-scroll-nav="0">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#features">Features</a>
+              <a class="nav-link" href="#features" data-scroll-nav="1">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#screenshots">Screenshots</a>
+              <a class="nav-link" href="#screenshots" data-scroll-nav="2">Screenshots</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#testimonials">Testimonials</a>
+              <a class="nav-link" href="#testimonials" data-scroll-nav="4">Testimonials</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#pricing">Pricing</a>
+              <a class="nav-link" href="#pricing" data-scroll-nav="5">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact" data-scroll-nav="6">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-------Home Section------->
-    <section class="home min-vh-100 py-5">
+    <section class="home min-vh-100 py-5" data-scroll-index="0" id="home">
       <div class="container py-5 position-relative">
         <div class="effect-wrap">
           <i
@@ -100,14 +100,14 @@
                   home__buttons
                   d-flex
                   justify-content-center justify-content-md-start
-                "
+                " data-scroll-goto="3"
               >
                 <a
                   href="#"
                   class="btn btn-light btn-lg rounded-pill px-4 shadow-lg"
                   >Download App</a
                 >
-                <div class="btn-play ms-4">
+                <div class="btn-play ms-4" >
                   <i class="fas fa-play-circle text-light fa-3x"></i>
                 </div>
               </div>
@@ -146,7 +146,7 @@
         justify-content-center
         align-items-center
         p-5
-      "
+      " 
     >
       <div class="video-popup-inner w-100 position-relative">
         <i
@@ -174,7 +174,7 @@
       </div>
     </div>
     <!-------Features------->
-    <section class="features">
+    <section class="features" data-scroll-index="1" id="features">
       <div class="container pt-5">
         <div class="row mt-5 justify-content-center">
           <div class="col-lg-8 text-center">
@@ -326,7 +326,7 @@
       </div>
     </section>
     <!-------Screenshots------->
-    <section class="screenshots my-5 py-5">
+    <section class="screenshots my-5 py-5" data-scroll-index="2" id="screenshots">
       <div class="container">
         <div class="row screenshots__title text-center mb-5">
           <h2 class="fs-1 fw-bold mb-4">App <span>Screenshots</span></h2>
@@ -351,7 +351,7 @@
       </div>
     </section>
     <!-------Download Section------->
-    <section class="download position-relative">
+    <section class="download position-relative" data-scroll-index="3">
       <div class="container py-5">
         <div class="row pt-5 mb-4">
           <div class="col download__title text-center pt-4">
@@ -588,7 +588,7 @@
       </div>
     </section>
     <!-------Testimonials------->
-    <section class="testimonials bg-light">
+    <section class="testimonials bg-light" data-scroll-index="4" id="testimonials">
       <div class="container py-5">
         <div class="row pt-5 mb-4">
           <div class="col testi__title text-center pt-4">
@@ -767,7 +767,7 @@
       </div>
     </section>
     <!-------Pricing------->
-    <section class="pricing">
+    <section class="pricing" data-scroll-index="5" id="pricing">
       <div class="container py-5">
 
         <div class="row pt-5 mb-4">
@@ -1061,7 +1061,7 @@
       </div>
     </section>
     <!-------Get In Touch-------> 
-    <section class="getintouch bg-light">
+    <section class="getintouch bg-light" data-scroll-index="6">
       <div class="container">
 
         <div class="row pt-5 mb-4">          
@@ -1148,11 +1148,11 @@
           <div class="col-md-3 col-6 mb-3 mb-md-0">
             <h5 class="mb-4">Quick Links</h5>
             <ul class="p-0 lh-lg fw-light">
-              <li><a href="#" class="text-decoration-none text-white">Home</a></li>
-              <li><a href="#" class="text-decoration-none text-white">Features</a></li>
-              <li><a href="#" class="text-decoration-none text-white">Screenshots</a></li>
-              <li><a href="#" class="text-decoration-none text-white">Pricing</a></li>
-              <li><a href="#" class="text-decoration-none text-white">Testimonials</a></li>
+              <li><a href="#home" class="text-decoration-none text-white">Home</a></li>
+              <li><a href="#features" class="text-decoration-none text-white">Features</a></li>
+              <li><a href="#screenshots" class="text-decoration-none text-white">Screenshots</a></li>
+              <li><a href="#pricing" class="text-decoration-none text-white">Pricing</a></li>
+              <li><a href="#testimonials" class="text-decoration-none text-white">Testimonials</a></li>
             </ul>
           </div>
           <div class="col-md-3 col-6 mb-3 mb-md-0">
@@ -1191,6 +1191,8 @@
     ></script>
     <!-- owl carousel js -->
     <script src="js/owl.carousel.min.js"></script>
+    <!-- scrollit js -->
+    <script src="js/scrollIt.min.js"></script>
     <!-- main js -->
     <script src="js/main.js"></script>
   </body>

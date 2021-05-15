@@ -96,5 +96,9 @@ $(document).ready(()=> {
         }
     });
 
-    
+    /* ------Members----- */
+    $.scrollIt({
+        topOffset: -50,
+        scrollTime: 200,
+    });
 });
