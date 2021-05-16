@@ -1,0 +1,37 @@
+--> Owl-carousel
+    - owl-carousel'i sınıf olarak ekle
+    - js kodlarını ekle
+    - nav button kısımları style ile düzenle
+
+--> Preloader 
+    - style tasarla
+    - js kodu ile hazır hale getir
+
+--> ScrollIt
+    - sitesinden gerekli kodlari nav, link veya section kısımlarına
+    ekleyip sayfa içi yönlendirmeleri etkinleştir.
+
+--> @keyframes
+    - animasyoları hazırla ve animation özelliği içinde kullan
+
+--> Navbar 
+    - scroll yaparken shrink görünümü eklemek için js ve style tasarımı yap.
+    - navlink kısmına hover olunca çizgi ekleme ::before ve :hover ile yapıldı
+
+--> transform-origin kullanımı öğrenildi
+
+--> Video Popup
+    - button basınca ekrana video getirme js vs style ile yapıldı.
+
+--> Fix background
+    - style olarak fix yapıp üzerine overlay eklendi
+    - overlay ::before ile tasarlandı
+
+--> Price tablosu ve fiyatlandırma tasarlaması öğrenildi. Relative yapılınca akışı bozmdan kendi içinde top bottom vs değerler belirlenebilir.
+
+--> Accordion
+    - özel tasarım style eklenildi
+    - :not yapısı öğrenildi
+    - " collapsed " sınıfı eklenilen ve kaldırılan bir sınıf olduğu için default olarak onu üzerinden style çalışması yapıldı.
+    - zorunlu kullanılanlar: accordion accordion-flush id data-bs-toggle="collapse" data-bs-target="#collapse_1" data-bs-parent="#question_accordion"
+    - css ten content kısmına yazarak <i></i> değiştirildi 
