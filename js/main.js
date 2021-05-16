@@ -1,3 +1,10 @@
+    /* ------Preloader----- */
+    setTimeout(()=> {
+        $('.preloader').fadeOut('slow', function() {
+          $(this).remove();
+        });
+      }, 1200);
+
 $(document).ready(()=> {
 
     /* ------Navbar Shrink----- */
@@ -101,7 +108,7 @@ $(document).ready(()=> {
         topOffset: -50,
         scrollTime: 200,
     });
-
+    
     /* ------Navbar Collapse----- */
     $('.nav-link').on('click', ()=>{
         $('.navbar-collapse').collapse('hide');
